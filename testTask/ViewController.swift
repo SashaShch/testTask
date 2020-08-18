@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  testTask
 //
-//  Created by Рома on 15.08.2020.
+//  Created by SashaShch on 15.08.2020.
 //  Copyright © 2020 SashaShch. All rights reserved.
 //
 
