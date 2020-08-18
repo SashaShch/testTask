@@ -12,6 +12,8 @@ class BreedListViewController: UIViewController {
     var viewModel: BreedListViewModel!
     
     @IBOutlet weak var tableView: UITableView!
+
+    @IBOutlet weak var activityIndicator: UIView!
     
     let decoder = JSONDecoder()
     
@@ -64,11 +66,14 @@ extension BreedListViewController: UITableViewDelegate {
 
 extension BreedListViewController: BreedListViewModelDelegate {
     func didStartFetchingBreeds() {
-        
+        activityIndicator.isHidden = false
+        tableView.isHidden = true
     }
     
     func didFinishFetcingBreeds() {
         DispatchQueue.main.async {
+            self.activityIndicator.isHidden = true
+            self.tableView.isHidden = false
             self.tableView.reloadData()
         }
     }
