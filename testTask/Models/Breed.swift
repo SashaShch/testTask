@@ -12,9 +12,16 @@ struct Breed {
     var breed: String
     var subBreed: [String]
 
-
-    func hasSubBreed() -> Bool {
-        return subBreed.isEmpty == true ? false :  true
+    var hasSubBreed: Bool {
+        get {
+            return subBreed.isEmpty == true ? false :  true
+        }
+    }
+    
+    var breedDescription: String {
+        get {
+            return "\(breed)(\(subBreed.count))"
+        }
     }
     
 }

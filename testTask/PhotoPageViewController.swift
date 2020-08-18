@@ -2,7 +2,7 @@
 //  PhotoPageViewController.swift
 //  testTask
 //
-//  Created by Рома on 16.08.2020.
+//  Created by SashaShch on 16.08.2020.
 //  Copyright © 2020 SashaShch. All rights reserved.
 //
 

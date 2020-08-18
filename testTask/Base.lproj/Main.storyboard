@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="2628.985507246377" y="105.80357142857143"/>
         </scene>
-        <!--Breed Photo View Controller-->
+        <!--Photos List View Controller-->
         <scene sceneID="w5O-cI-dgl">
             <objects>
-                <pageViewController storyboardIdentifier="BreedPhotoViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="gRU-gx-klb" customClass="BreedPhotoViewController" customModule="testTask" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="PhotosListViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="gRU-gx-klb" customClass="PhotosListViewController" customModule="testTask" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjt-yv-7hG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3601" y="106"/>

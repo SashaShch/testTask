@@ -2,7 +2,7 @@
 //  FavouriteTableViewCell.swift
 //  testTask
 //
-//  Created by Рома on 17.08.2020.
+//  Created by SashaShch on 17.08.2020.
 //  Copyright © 2020 SashaShch. All rights reserved.
 //
 

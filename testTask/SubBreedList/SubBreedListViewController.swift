@@ -2,7 +2,7 @@
 //  SubBreedListViewController.swift
 //  testTask
 //
-//  Created by Рома on 16.08.2020.
+//  Created by SashaShch on 16.08.2020.
 //  Copyright © 2020 SashaShch. All rights reserved.
 //
 
@@ -39,9 +39,8 @@ extension SubBreedListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let vc = mainStoryboard.instantiateViewController(withIdentifier: "BreedPhotoViewController") as! BreedPhotoViewController
-        vc.breedInfo = "\(self.breedInfo.breed)/\(self.breedInfo.subBreed[indexPath.item])"
-        vc.breedTitle = "\(self.breedInfo.subBreed[indexPath.item])"
+        let vc = mainStoryboard.instantiateViewController(withIdentifier: "PhotosListViewController") as! PhotosListViewController
+        vc.viewModel = PhotosListViewModel(breed: self.breedInfo.breed, subBreed: self.breedInfo.subBreed[indexPath.item])
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
